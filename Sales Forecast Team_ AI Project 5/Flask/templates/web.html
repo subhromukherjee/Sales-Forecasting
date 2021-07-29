@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block content%}
+<p><a target="blank" href="https://techstacker.com/how-to-loop-background-color-animation-css/"></a></p>
+
+<br><br><br><br><br><br><br><br><br><br>
+<form action="/login" method="post">
+<div class="container">
+	<div class="mb-3">
+	  <label for="exampleFormControlInput1" class="form-label display-4"><b>Forecast Sales</b></label>
+	  <input type="text" class="form-control" id="exampleFormControlInput1" name="year" placeholder="Enter sales amount for last 10 days">
+	</div>
+	<br>
+	<button type="submit" class="btn btn-primary">Predict</button>
+	<div class="bor"><b><font color="white" size=5>{{showcase}}</font><br></div>
+</div>
+</form>
+
+
+
+
+<style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+{%endblock%}
